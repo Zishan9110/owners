@@ -1,0 +1,140 @@
+#contact{
+    margin: 0 auto;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+
+}
+ h2{
+    margin-top: 3rem;
+  
+    margin-bottom: -0.1rem;
+}
+.contactPara{
+    padding: 2rem;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.contactMail{
+    height: 2.4rem;
+    width: 26rem;
+    padding: 0.3rem;
+    align-items: center;
+    text-align: center;
+    background: rgb(73, 66, 66);
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+
+}
+input{
+    border: none;
+    outline: none;
+    color: white;
+    margin-right: 12rem;
+}
+.contactMsg{
+    width: 26rem;
+    height: 8rem;
+    background: rgb(73, 66, 66);
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+textarea{
+  border: none;
+  color: white;
+  outline: none;
+  width: 26rem;
+  height: 8rem;
+}
+textarea:placeholder{
+    color: grey;
+}
+.contactBtn{
+    height: 3rem;
+    width: 10rem;
+    margin: 3rem;
+    border: none;
+    outline: none;
+    background: white;
+    font-size: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.link{
+    
+    height: 3rem;
+    width: 3rem;
+    margin: 0.5rem;
+}
+@media screen and (max-width:440px) {
+    
+    .contactMail{
+        height: 2.4rem;
+        width: 18rem;
+        padding: 0.3rem;
+        align-items: center;
+        text-align: center;
+        background: rgb(73, 66, 66);
+        border-radius: 0.5rem;
+        cursor: pointer;
+    
+    
+    }
+    input{
+        border: none;
+        outline: none;
+        color: white;
+        margin-right: 12rem;
+    }
+    .contactMsg{
+        width: 18rem;
+        height: 8rem;
+        background: rgb(73, 66, 66);
+        padding: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    textarea{
+      border: none;
+      color: white;
+      outline: none;
+      width: 18rem;
+      height: 8rem;
+    }
+    textarea:placeholder{
+        color: grey;
+    }
+    .contactBtn{
+        height: 3rem;
+        width: 10rem;
+        margin: 3rem;
+        border: none;
+        outline: none;
+        background: white;
+        font-size: 0.5rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+    } 
+}

@@ -1,0 +1,26 @@
+#language{
+    margin: 0 auto;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+
+}
+h2{
+    margin: 2rem;
+}
+.languagePara{
+    padding: 2rem;
+}
+p{
+    margin-bottom: 3rem;
+}
+.languageName{
+    border: 1px solid rgb(92, 82, 82);
+    margin: 1rem;
+    border-radius: 3px;
+    padding: 10px;
+}
