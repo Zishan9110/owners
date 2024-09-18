@@ -47,7 +47,7 @@ const Contact = () => {
         <button className="contactBtn">Submit</button>
 
         <div className="links">
-          <img src={Facebook} alt="" className="link" />
+          <a href="https://www.facebook.com/profile.php?id=100088116139465"><img src={Facebook} alt="" className="link" /></a>
           <img src={Instagram} alt="" className="link" />
           <img src={Twitter} alt="" className="link" />
           <img src={YouTube} alt="" className="link" />
