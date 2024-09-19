@@ -9,7 +9,7 @@ const Intro = () => {
             <div className="introContant">
                 <span className="hello">Hello</span>
                 <span className="introText">I,m <span className="introName">Zishan</span><br />Websites Designer</span>
-                <p className="introPara">I,m a Skilled web designer with experience in creating <br/>usually appeling and friendly website</p>
+                <p className="introPara">I,m a Skilled web developer with experience in creating <br/>usually appeling and friendly websites</p>
                 <Link><button className="btn">Hire Me</button></Link>
             </div>
             <img src={myImg} alt="" className="bg" />
