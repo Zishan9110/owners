@@ -8,12 +8,19 @@ import Footer from "./Components/Footer/footer";
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
+=======
+     <Contact/>
+>>>>>>> 64977de7325ef8b0708b9b02f5e47f0f3fa0ce89
      <Navbar/>
      <Intro/>
      <Skills/>
      <Works/>
      <Language/>
+<<<<<<< HEAD
      <Contact/>
+=======
+>>>>>>> 64977de7325ef8b0708b9b02f5e47f0f3fa0ce89
      <Footer/>
     </div>
   );

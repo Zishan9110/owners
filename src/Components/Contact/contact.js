@@ -47,7 +47,11 @@ const Contact = () => {
         <button className="contactBtn">Submit</button>
 
         <div className="links">
+<<<<<<< HEAD
           <img src={Facebook} alt="" className="link" />
+=======
+          <a href="https://www.facebook.com/profile.php?id=100088116139465"><img src={Facebook} alt="" className="link" /></a>
+>>>>>>> 64977de7325ef8b0708b9b02f5e47f0f3fa0ce89
           <img src={Instagram} alt="" className="link" />
           <img src={Twitter} alt="" className="link" />
           <img src={YouTube} alt="" className="link" />
