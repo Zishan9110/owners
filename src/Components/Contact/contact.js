@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
 import './contact.css';
 import Facebook from '../../Assets/Facebook.png';
 import Instagram from '../../Assets/Instagram.png';
@@ -8,6 +8,7 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -24,41 +25,39 @@ const Contact = () => {
         },
       );
   };
+
   return (
     <section id="contact">
-        <h2>Contact Me</h2>
-        <div className="contactPara">
-        <p>Please Fill Out The Form Below To Discuss Only Opourtunity Work.</p>
+      <h2>Contact Me</h2>
+      <div className="contactPara">
+        <p>Please Fill Out The Form Below To Discuss Only Opportunity Work.</p>
+      </div>
+      
+      <form className="ContactForm" ref={form} onSubmit={sendEmail}>
+        <div className="contactMail">
+          <input type="text" placeholder='Your Name' className="contactName" required />
         </div>
-       
-        <div className="ContactForm" ref={form} onSubmit={sendEmail}>
-            <div className="contactMail">
-            <input type="text" placeholder='Your Name' className="contactName" />
-            </div>
-            <br/>
-            <div className="contactMail">
-            <input type="text" placeholder='Your Email'className="ContactEmail" />
-            </div>
-            <br/>
-            <div className="contactMsg">
-            <textarea name="" id="" cols="30" rows="10">Your Massage</textarea>
-            </div>
+        <br />
+        <div className="contactMail">
+          <input type="email" placeholder='Your Email' className="ContactEmail" required />
         </div>
-        <button className="contactBtn">Submit</button>
+        <br />
+        <div className="contactMsg">
+          <textarea name="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+        </div>
+        <button className="contactBtn" type="submit">Submit</button>
+      </form>
 
-        <div className="links">
-<<<<<<< HEAD
-          <img src={Facebook} alt="" className="link" />
-=======
-          <a href="https://www.facebook.com/profile.php?id=100088116139465"><img src={Facebook} alt="" className="link" /></a>
->>>>>>> 64977de7325ef8b0708b9b02f5e47f0f3fa0ce89
-          <img src={Instagram} alt="" className="link" />
-          <img src={Twitter} alt="" className="link" />
-          <img src={YouTube} alt="" className="link" />
-        </div>
-
+      <div className="links">
+        <a href="https://www.facebook.com/profile.php?id=100088116139465">
+          <img src={Facebook} alt="Facebook" className="link" />
+        </a>
+        <img src={Instagram} alt="Instagram" className="link" />
+        <img src={Twitter} alt="Twitter" className="link" />
+        <img src={YouTube} alt="YouTube" className="link" />
+      </div>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
